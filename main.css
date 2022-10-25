@@ -1,0 +1,121 @@
+.logo{
+	display: flex;
+	width: 100%;
+}
+
+.main_start{
+	width: 90%;
+	text-align: center;
+	font-size: 25px;
+	margin-left: 700px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	color: #8a2be2;
+	text-shadow: 1px 1px 2px pink;
+}
+.main_icon{
+	width: 60%;
+	display: flex;
+	justify-content: end;
+}
+
+.fon{
+	display: flex;
+	margin-left: 8px;
+	position: absolute;
+
+}
+
+.hero__wrapper {
+    max-width: 480px;
+    max-height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #;
+    text-align: center;
+    font-size: 30px;
+    color: #ffa343;
+    position: relative;
+}
+.hero__wrapper2{
+	font-size: 20px;
+}
+.arrowleft {
+		display: flex;
+        position:relative;
+        left: 100px;
+        top:205px;
+        width:40%;
+        float:left;
+    }
+    .arrowright {
+        position:relative;
+        left:611px;
+        top:205px;
+        width:40%;
+        float:right;
+    }
+    .arrowleft img{
+        width:100%;
+    }
+    .arrowright img{
+        width:100%;
+    }
+ 
+    .arrowleft img:hover{
+        cursor:pointer;
+        width:95%;
+    }
+    .arrowleft img:active{
+        width:85%;
+    }
+    .arrowright img:hover{
+        cursor:pointer;
+        width:95%;
+    }
+    .arrowright img:active{
+        width:85%;
+    }
+    .gallery__wrapper{
+    			display: flex;
+
+        position: absolute;
+        left: 475px;
+        display: block;
+        margin: 0 auto;
+    }
+ 
+    .image-main__wrapper{
+ 
+    }
+    .image-main{
+    	display: flex;
+        position: absolute;
+        line-height: 0;
+        left: 205px;
+ 
+    }
+    .image-thumbnails__wrapper{
+       width:785px;
+        height: 150px;
+        position: absolute;
+        top:510px;
+ 
+    }
+    .thumbnails{
+    	width: 30%;
+    	gap: 10px;
+        position: relative;
+        left: 275px;
+        float: left;
+        list-style: none;
+        display: flex;       
+        cursor: pointer;
+    }
+    .thumbnails img{
+        border: 2px solid dimgray;
+        margin: 0px 1px 17px!important;
+    }
