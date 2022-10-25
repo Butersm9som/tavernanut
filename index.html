@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Taverna nyutelki</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<style>
+body {
+    background-color: #ffa343;
+
+}
+</style>
+<body>
+	<style>
+		a{
+		text-decoration: none;
+		}
+	</style>
+	<div class="logo">
+		<img src="media/img/logo.png" width="5%" height="5%">
+		<div class="main_start">
+			<a href="index.html"><p>Главная</p></a>
+			<a href="magaz.html"><p>Магазин</p></a>
+		
+		<div class="main_icon">
+			<a href="https://vk.com/public216108582" target="_blank" rel="nofollow"><img src="media/img/vk.png" width="80px" height="80px"></a>
+			<a href="https://t.me/tavernanut" target="_blank" rel="nofollow"><img src="media/img/telegram.png" width="80px" height="80px"></a>
+			<a href="https://vk.com/public216108582" target="_blank" rel="nofollow"><img src="media/img/instagram.png" width="80px" height="80px"></a>
+		</div>
+
+	</div>
+
+</div>	<hr>
+		<!----Конец шапки---->
+
+		<div class="fon">
+			<img src="media/img/fon.jpg" width="99%">
+		</div>
+
+    <div class="hero__wrapper">
+            <p>Добро пожаловать - это магазин Нютелки</p>
+            <div class="hero__wrapper2">
+            <p>Здесь вы увидите мои новые и старые работы, и просто уютно посмотрите на мои разворотики •_•</p>
+            </div>
+    </div>
+    <div class="gallery__wrapper"> 
+            <div class="image-main__wrapper">
+                <img class="image-main" src="media/img/1.jpg" id="image-main" width="500px" height="500px">
+                    <div class="arrowleft"><img src="media/img/left.png" id="arrowleft"/></div>
+                    <div class="arrowright"><img src="media/img/right.png" id="arrowright"/></div>
+                <div class="image-thumbnails__wrapper">
+                    <ul class="thumbnails">
+                        <li><img id="thumb-1" class="gallery__img" src="media/img/1.jpg" data-full-url="media/img/1.jpg" width="100%" /></li>
+                        <li><img id="thumb-2" class="gallery__img" src="media/img/2.jpg" data-full-url="media/img/2.jpg" width="100%" /></li>
+                        <li><img id="thumb-3" class="gallery__img" src="media/img/3.jpg" data-full-url="media/img/3.jpg" width="100%"/></li>
+                        <li><img id="thumb-4" class="gallery__img" src="media/img/4.jpg" data-full-url="media/img/4.jpg" width="100%"/></li>
+                        <li><img id="thumb-5" class="gallery__img" src="media/img/5.jpg" data-full-url="media/img/5.jpg" width="100%"/></li>
+                        <li><img id="thumb-6" class="gallery__img" src="media/img/6.jpg" data-full-url="media/img/6.jpg" width="100%"/></li>
+                        <li><img id="thumb-7" class="gallery__img" src="media/img/7.jpg" data-full-url="media/img/7.jpg" width="100%"/></li>
+                        <li><img id="thumb-8" class="gallery__img" src="media/img/8.jpg" data-full-url="media/img/8.jpg" width="100%"/></li>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script type="text/javascript">
+	 var thumbnails = Array.prototype.slice.call(document.querySelectorAll('.gallery__img'));
+    function clickOnThumbnail(event) {
+        document.querySelector('.image-main').src = this.dataset.fullUrl;
+    }
+    for (var i = 0; i < thumbnails.length; i++) {
+        thumbnails[i].addEventListener('click', clickOnThumbnail);
+    };
+ 
+    ;(function arrows(){
+        var leftArrow = document.getElementById('arrowleft'),
+            rightArrow = document.getElementById('arrowright'),
+            initImgNumber = 1;
+        maxImgNum = 8;
+ 
+        leftArrow.addEventListener('click', moveBackvard);
+        rightArrow.addEventListener('click', moveForvard);
+ 
+        function moveBackvard(){
+            var image = document.getElementById('image-main');
+            initImgNumber--;
+            if (initImgNumber == 0){initImgNumber = maxImgNum};
+            image.setAttribute('src', 'media/img/' + initImgNumber + '.jpg');
+        };
+ 
+        function moveForvard(){
+            var image = document.getElementById('image-main');
+            initImgNumber++;
+            if (initImgNumber > maxImgNum){initImgNumber = 1};
+            image.setAttribute('src', 'media/img/' + initImgNumber + '.jpg');
+        };
+    })();
+</script>
+</html>
